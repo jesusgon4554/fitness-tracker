@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
-const User = require("./userModel.js");
+const User = require("./workoutModel.js");
 const app = express();
 
 app.use(logger("dev"));
@@ -25,6 +25,8 @@ app.post("/submit", ({ body }, res) => {
       res.json(err);
     });
 });
+app.get("./public/index.html");
+app.get("./public/index.js");
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
