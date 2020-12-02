@@ -25,8 +25,7 @@ app.post("/submit", ({ body }, res) => {
       res.json(err);
     });
 });
-app.get("./public/index.html");
-app.get("./public/index.js");
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
