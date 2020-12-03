@@ -1,2 +1,2 @@
-const Workout = require("./workout.js");
+const Workout = require("..public/workout");
 module.exports = { Workout };
