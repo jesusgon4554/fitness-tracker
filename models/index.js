@@ -1,2 +1,2 @@
-const Workout = require("..public/workout");
+const Workout = require("./workout");
 module.exports = { Workout };
