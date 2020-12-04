@@ -22,7 +22,7 @@ app.use(require("./routes/htmlRoutes.js"));
 
 //connect to DB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/Workoutdb',
+  process.env.MONGODB_URI || 'mongodb://localhost/Workoutdb',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
