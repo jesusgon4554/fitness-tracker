@@ -17,8 +17,8 @@ app.use(express.static("public"));
 
 //routes
 
-app.use(require("./routes/apiRoutes.js"));
-app.use(require("./routes/htmlRoutes.js"));
+app.use(require("./routes/apiRoutes"));
+app.use(require("./routes/htmlRoutes"));
 
 //connect to DB
 mongoose.connect(
