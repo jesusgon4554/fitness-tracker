@@ -15,14 +15,15 @@ app.use(express.static("public"));
 
 //connect to DB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/Workoutdb',
+  process.env.MONGODB_URI || 'mongodb://localhost/workout',
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
+    // useUnifiedTopology: true,
+    // useCreateIndex: true,
     useFindAndModify: false
-  }).then(()=> console.log("connected to Mongodb"))
-  .catch((err) => console.log(err))
+  // }).then(()=> console.log("connected to Mongodb"))
+  // .catch((err) => console.log(err)
+  });
 
 //routes
 app.use(require("./routes/api-routes"));
