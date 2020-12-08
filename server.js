@@ -26,7 +26,7 @@ app.use(express.static("public"));
 //   });
 
   const MongoClient = require('mongodb').MongoClient;
-  const uri = "mongodb+srv://jesusgon4554:Sprinkles*54@cluster0.uezxk.mongodb.net/Workoutdb?retryWrites=true&w=majority";
+  const uri = "mongodb+srv://jesusgon4554:Sprinkles*54@cluster0.uezxk.mongodb.net/workouts?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true });
   client.connect(err => {
     const collection = client.db("test").collection("devices");
@@ -34,7 +34,7 @@ app.use(express.static("public"));
     client.close();
   });
   
-  
+
 //routes
 app.use(require("./routes/api-routes"));
 app.use(require("./routes/html-routes"));
