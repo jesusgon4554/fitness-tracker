@@ -1,8 +1,7 @@
 # Workout Tracker
-![app](assets/add/a/workout.png)
+![app](assets/addWorkout.png)
 ![app](assets/charts.png)
 ![app](assets/exercises.png)
-
 
 ## User Story
 
