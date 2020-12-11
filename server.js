@@ -21,8 +21,7 @@ mongoose.connect(
     // useUnifiedTopology: true,
     // useCreateIndex: true,
     useFindAndModify: false
-  // }).then(()=> console.log("connected to Mongodb"))
-  // .catch((err) => console.log(err)
+
   });
 
 
